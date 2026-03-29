@@ -78,10 +78,18 @@ function toggle(id){
 
 <body>
 
-<header>
-    <img src="logo.png" class="logo">
-    <h1>Safar Jan Seva Kendra</h1>
-    <p>Owner: Saad Saifi</p>
+<header style="display:flex; align-items:center; justify-content:space-between; padding:15px; background: linear-gradient(45deg,#007bff,#00c6ff); color:white;">
+    <div style="display:flex; align-items:center;">
+        <img src="logo.png" class="logo">
+        <div style="margin-left:10px;">
+            <h1 style="margin:0;">Safar Jan Seva Kendra</h1>
+            <p style="margin:0; font-size:14px;">Owner: Saad Saifi</p>
+        </div>
+    </div>
+    <div style="text-align:right; font-size:14px;">
+        <p style="margin:0;">🕒 Timing:</p>
+        <p style="margin:0;">7 Days Open Shop: 9:00 AM - 7:00 PM</p>
+    </div>
 </header>
 
 <!-- 🔥 TUMHARA FULL CODE START -->
@@ -168,13 +176,41 @@ caste certificate
 </div>
 </div>
 
+<!-- CERTIFICATES -->
+<div class="section">
+<h2>📄 Online Work</h2>
+
+<div class="box" onclick="toggle('Pan Card')">
+Pan Card
+<div id="Pan Card" class="content">
+- Aadhaar <br>
+- Gmail & Mobile no<br>
+</div>
+</div>
+
+<div class="box" onclick="toggle('PVC Card')">
+PVC Card
+<div id="PVC Card" class="content">
+- Aadhaar <br>
+</div>
+</div>
+
 <!-- PENSION -->
 <div class="section">
-<h2>💰 Pension & Schemes</h2>
+<h2>💰 Sarkari Pension</h2>
 
 <div class="box" onclick="toggle('oldage')">
 Old Age Pension
 <div id="oldage" class="content">
+- Aadhaar Card<br>
+- Bank Passbook<br>
+- Aay Prman Ptra<br>
+</div>
+</div>
+
+<div class="box" onclick="toggle('PM kisan')">
+PM kisan
+<div id="PM kisan" class="content">
 - Aadhaar Card<br>
 - Bank Passbook<br>
 - Aay Prman Ptra<br>
@@ -208,7 +244,27 @@ Recharge
 ✔ Mobile & DTH Recharge
 </div>
 </div>
+<div class="box" onclick="toggle('Foto Copy')">
+Foto Copy
+<div id="Foto Copy" class="content">
+✔ Adhar Card<br>
+✔ Bank Pasbook<br>
+✔ Other Document<br>
+</div>
+</div>
 
+<div class="box" onclick="toggle('Withdrawal of Money')">
+Withdrawal of Money
+<div id="Withdrawal of Money" class="content">
+✔ Withdrawal of Money
+</div>
+</div>
+
+<div class="box" onclick="toggle('Leminesan')">
+Leminesan
+<div id="Leminesan" class="content">
+✔ Document
+</div>
 </div>
 
 <!-- LOCATION -->
