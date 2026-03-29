@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safar Jan Seva Kendra</title>
+
+<style>
+body { margin:0; font-family: Arial; background:#f5f5f5; }
+
+header {
+    background: linear-gradient(45deg,#007bff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.logo { width:80px; border-radius:50%; }
+
+.section { padding:15px; }
+
+.box {
+    background:white;
+    padding:12px;
+    margin:8px 0;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    cursor:pointer;
+}
+
+.content {
+    display:none;
+    padding:10px;
+    background:#e9f3ff;
+    border-radius:8px;
+    margin-top:5px;
+}
+
+.btn {
+    display:block;
+    text-align:center;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+}
+
+.call { background:green; }
+.whatsapp { background:#25D366; }
+
+iframe { width:100%; height:250px; border:none; }
+
+.float {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+}
+</style>
+
+<script>
+function toggle(id){
+    var x = document.getElementById(id);
+    if(x.style.display === "block"){
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" class="logo">
+    <h1>Safar Jan Seva Kendra</h1>
+    <p>Owner: Saad Saifi</p>
+</header>
+
+<!-- 🔥 TUMHARA FULL CODE START -->
+
+<!-- GOVERNMENT CARDS -->
+<div class="section">
+<h2>🪪 Government Cards</h2>
+
+<div class="box" onclick="toggle('aadhar')">
+Aadhaar Card / Update
+<div id="aadhar" class="content">
+✔ Name, Address, DOB Update<br>
+✔ Mobile Number Update<br>
+✔ Email Update<br>
+✔ Photo & Biometric Update<br><br>
+Documents:<br>
+- Aadhaar Card Copy<br>
+- Mobile Number<br>
+- Supporting Document<br>
+</div>
+</div>
+
+<div class="box" onclick="toggle('pan')">
+PAN Card / Update
+<div id="pan" class="content">
+✔ New PAN Apply<br>
+✔ Correction<br><br>
+Documents:<br>
+- Aadhaar Card<br>
+- Photo<br>
+- Signature<br>
+</div>
+</div>
+
+<div class="box" onclick="toggle('dl')">
+Driving License
+<div id="dl" class="content">
+✔ New License<br>
+✔ Renewal<br><br>
+Documents:<br>
+- Aadhaar Card<br>
+- Photo<br>
+</div>
+</div>
+
+<div class="box" onclick="toggle('passport')">
+Passport / Renewal
+<div id="passport" class="content">
+✔ New Passport<br>
+✔ Renewal<br><br>
+Documents:<br>
+- Aadhaar Card<br>
+- Address Proof<br>
+</div>
+</div>
+
+</div>
+
+<!-- CERTIFICATES -->
+<div class="section">
+<h2>📄 Certificates</h2>
+
+<div class="box" onclick="toggle('income certificate')">
+Income Certificate
+<div id="income certificate" class="content">
+- Aadhaar Card<br>
+- Income Proof<br>
+</div>
+</div>
+
+<div class="box" onclick="toggle('residence certificate')">
+Residence Certificate
+<div id="residence certificate" class="content">
+- Aadhaar Card<br>
+- Address Proof<br>
+</div>
+</div>
+
+<div class="box" onclick="toggle('caste certificate')">
+caste certificate
+<div id="caste certificate" class="content">
+- Aadhaar Card<br>
+- Address Proof<br>
+</div>
+</div>
+
+<!-- PENSION -->
+<div class="section">
+<h2>💰 Pension & Schemes</h2>
+
+<div class="box" onclick="toggle('oldage')">
+Old Age Pension
+<div id="oldage" class="content">
+- Aadhaar Card<br>
+- Bank Passbook<br>
+- Aay Prman Ptra<br>
+</div>
+</div>
+
+<div class="box" onclick="toggle('widow')">
+Widow Pension
+<div id="widow" class="content">
+- Aadhaar Card<br>
+- Death Certificate<br>
+</div>
+</div>
+
+</div>
+
+<!-- OTHER -->
+<div class="section">
+<h2>🛠️ Other Services</h2>
+
+<div class="box" onclick="toggle('money')">
+Money Transfer
+<div id="money" class="content">
+✔ Fast Transfer Service
+</div>
+</div>
+
+<div class="box" onclick="toggle('recharge')">
+Recharge
+<div id="recharge" class="content">
+✔ Mobile & DTH Recharge
+</div>
+</div>
+
+</div>
+
+<!-- LOCATION -->
+<div class="section">
+<h2>📍 Location</h2>
+
+<iframe src="https://www.google.com/maps?q=26.8772284,84.0305592&output=embed"></iframe>
+
+<a class="btn call" href="https://www.google.com/maps/dir/?api=1&destination=26.8772284,84.0305592">
+📍 Get Direction
+</a>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+<h2>📞 Contact</h2>
+
+<a class="btn call" href="tel:9721345236">📞 Call Now</a>
+<a class="btn whatsapp" href="https://wa.me/9721345236">💬 WhatsApp</a>
+
+</div>
+
+<a href="https://wa.me/9721345236" class="float">💬</a>
+
+</body>
+</html>
